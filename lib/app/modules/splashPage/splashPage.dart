@@ -13,9 +13,6 @@ class SplashPage extends GetView<SplashPageController> {
     Scaffold(
       body: SafeArea(
         child: Container(
-          decoration: const BoxDecoration(
-            color: Color(0XFF301C39)
-          ),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
