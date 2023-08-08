@@ -14,27 +14,18 @@ class SplashPage extends GetView<SplashPageController> {
       body: SafeArea(
         child: Container(
           decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [Color(0xFFEAD6EE), Color(0xFFA0F1EA)], // You can customize the gradient colors here
-            ),
+            color: Color(0XFF301C39)
           ),
-          child: const Center(
+          child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Controle Acesso', // Replace 'MyApp' with your app's name or any other desired text
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
+                Image.asset(
+                  'assets/images/logo.png',
                 ),
-                SizedBox(height: 200),
-                CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                const SizedBox(height: 64),
+                const CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xffA0D7FF)),
                 ),
               ],
             ),
