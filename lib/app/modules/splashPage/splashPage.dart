@@ -12,20 +12,18 @@ class SplashPage extends GetView<SplashPageController> {
     return 
     Scaffold(
       body: SafeArea(
-        child: Container(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  'assets/images/logo.png',
-                ),
-                const SizedBox(height: 64),
-                const CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Color(0xffA0D7FF)),
-                ),
-              ],
-            ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/logo.png',
+              ),
+              const SizedBox(height: 64),
+              const CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(Color(0xffA0D7FF)),
+              ),
+            ],
           ),
         ),
       ),
